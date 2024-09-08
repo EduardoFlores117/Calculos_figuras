@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo de Área y Perímetro</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="container">
+    <h1 class="text-center mt-4">Calculadora de Área y Perímetro</h1>
+    
+    <div id="personaje" class="text-center" style="color: whitesmoke;">😊 ¡Hola! Vamos a calcular las áreas y perímetros de las figuras geométricas. ¡Diviértete!</div>
+
+    <!-- Cuadrado -->
+    <div class="my-4">
+        <h2>Cuadrado</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <label for="ladoCuadrado" class="form-label">Lado del cuadrado:</label>
+                <input type="number" id="ladoCuadrado" class="form-control" placeholder="Lado">
+                <button class="btn btn-primary mt-2" onclick="calcularCuadrado()">Calcular</button>
+                <button class="btn btn-danger mt-2" onclick="eliminarCuadrado()">Eliminar</button>
+                <p id="resultadoCuadrado" class="resultado"></p>
+            </div>
+            <div class="col-md-6">
+                <div id="cuadradoAnimado" class="figura bg-success mt-2" style="width: 50px; height: 50px;"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Rectángulo -->
+    <div class="my-4">
+        <h2>Rectángulo</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <label for="largoRectangulo" class="form-label">Largo del rectángulo:</label>
+                <input type="number" id="largoRectangulo" class="form-control" placeholder="Largo">
+                <label for="anchoRectangulo" class="form-label mt-2">Ancho del rectángulo:</label>
+                <input type="number" id="anchoRectangulo" class="form-control" placeholder="Ancho">
+                <button class="btn btn-primary mt-2" onclick="calcularRectangulo()">Calcular</button>
+                <button class="btn btn-danger mt-2" onclick="eliminarRectangulo()">Eliminar</button>
+                <p id="resultadoRectangulo" class="resultado"></p>
+            </div>
+            <div class="col-md-6">
+                <div id="rectanguloAnimado" class="figura bg-success mt-2" style="width: 100px; height: 50px;"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Círculo -->
+    <div class="my-4">
+        <h2>Círculo</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <label for="radioCirculo" class="form-label">Radio del círculo:</label>
+                <input type="number" id="radioCirculo" class="form-control" placeholder="Radio">
+                <button class="btn btn-primary mt-2" onclick="calcularCirculo()">Calcular</button>
+                <button class="btn btn-danger mt-2" onclick="eliminarCirculo()">Eliminar</button>
+                <p id="resultadoCirculo" class="resultado"></p>
+            </div>
+            <div class="col-md-6">
+                <div id="circuloAnimado" class="figura bg-success mt-2 rounded-circle" style="width: 50px; height: 50px;"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Triángulo -->
+    <div class="my-4">
+        <h2>Triángulo</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <label for="baseTriangulo" class="form-label">Base del triángulo:</label>
+                <input type="number" id="baseTriangulo" class="form-control" placeholder="Base">
+                <label for="alturaTriangulo" class="form-label mt-2">Altura del triángulo:</label>
+                <input type="number" id="alturaTriangulo" class="form-control" placeholder="Altura">
+                <label for="lado1Triangulo" class="form-label mt-2">Lado 1 del triángulo:</label>
+                <input type="number" id="lado1Triangulo" class="form-control" placeholder="Lado 1">
+                <label for="lado2Triangulo" class="form-label mt-2">Lado 2 del triángulo:</label>
+                <input type="number" id="lado2Triangulo" class="form-control" placeholder="Lado 2">
+                <button class="btn btn-primary mt-2" onclick="calcularTriangulo()">Calcular</button>
+                <button class="btn btn-danger mt-2" onclick="eliminarTriangulo()">Eliminar</button>
+                <p id="resultadoTriangulo" class="resultado"></p>
+            </div>
+            <div class="col-md-6">
+                <div id="trianguloAnimado" class="figura" style="width: 0px; height: 0px; border-left: 50px solid transparent; border-right: 50px solid transparent; border-bottom: 100px solid #4CAF50;"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

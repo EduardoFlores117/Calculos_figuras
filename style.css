@@ -1,0 +1,41 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #222a31;
+}
+
+#personaje {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+
+.figura {
+    margin: auto;
+}
+
+h2, h1 {
+    color: whitesmoke;
+}
+
+label {
+    color: whitesmoke;
+}
+
+input[type="number"] {
+    max-width: 200px;
+}
+
+.resultado {
+    font-weight: bold;
+    color: rgb(79, 187, 12);
+}
+
+.btn-primary {
+    background-color: #f7d347; 
+    border-color: #f5c632;    
+    color: #222a31;           
+}
+
+.btn-primary:hover {
+    background-color: #f5c632; 
+    border-color: #f7b825;     
+}
